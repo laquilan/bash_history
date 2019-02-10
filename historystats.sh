@@ -3,7 +3,6 @@
 #+--------------------------+
 #|chmod +x ./historystats.sh|
 #+--------------------------+
-#relancerScript=./$0
 
 # Declaration fonction pour sauter une ligne.
 sauterLigne()
@@ -109,7 +108,7 @@ elif [ "$choixMenu" = 2 ] ; then
     sort $fichier | uniq -c | sort -bgr | head -n 10
 
     sauterLigne
-    echo "=> Il y a $nbLignes commandes différentes, sur un total de $nbCommandes commandes tapées, soit environ $pourcentage% de commandes répétées. Entre autre, l'historique contient $nbMots mots."
+    echo "=> Il y a $nbLignes commandes différentes, sur un total de $nbCommandes commandes tapées, soit environ $pourcentage%. Entre autre, l'historique contient $nbMots mots ou groupe de caracteres."
 
     sauterLigne
     echo ">! Voulez-vous continuer? <!"
@@ -132,6 +131,8 @@ elif [ "$choixMenu" = 3 ] ; then
     echo "!> Fin du programme"
 
     # On kill directement le group de sous-processus
+    # Il est preferable de proceder ainsi
+    # s'il y a eu usage de pipes precedemment.
     PGID=$(ps -o pgid= $$ | grep -o [0-9]*)
     setsid kill -- -$PGID
 
