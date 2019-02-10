@@ -33,7 +33,7 @@ if [ "$choixMenu" = 1 ] ; then
 
         Oui ) sauterLigne
         echo "#> Création du fichier..."; touch ~/.bash_history
-        echo "#> Ajout des commandes suivantes dans le ~/.bash_profile... "
+        echo "#> Ajout des commandes suivantes dans le ~/.bashrc... "
         echo "SHELL_SESSION_HISTORY=0" >> ~/.bashrc
         echo "HISTSIZE=1000" >> ~/.bashrc
         echo "HISTFILESIZE=4000" >> ~/.bashrc
