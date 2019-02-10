@@ -17,7 +17,7 @@ echo "2. Consulter un résumé de l'historique."
 echo "3. Quitter"
 read -r choixMenu
 
-# Sinon si 1 alors on sauvegarde le fichier de base
+# Si 1 alors on sauvegarde le fichier de base
 if [ "$choixMenu" = 1 ] ; then
   sauterLigne
 
