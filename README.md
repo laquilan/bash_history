@@ -14,7 +14,7 @@ __/!\ Il est preferable d'utiliser bash et Linux. Bug de group_id sur macOS /!\ 
 
 1/ cloner le depot
 
-	git clone git@github.com:vr0umvr0um/NSY103_2018_2019.git
+	git clone https://github.com/vr0umvr0um/NSY103_2018_2019.git
 
 
 2/  rendre le script executable
