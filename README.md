@@ -1,6 +1,4 @@
-# NSY103_2018_2019
-
-### Projet Linux : Principes & Programmation
+### Visualiser quelques infos sur l'historique bash
 
 __/!\ Il est preferable d'utiliser bash et Linux. Bug de group_id sur macOS /!\ __
 
@@ -14,10 +12,7 @@ __/!\ Il est preferable d'utiliser bash et Linux. Bug de group_id sur macOS /!\ 
 
 1/ cloner le depot
 
-	git clone https://github.com/vr0umvr0um/NSY103_2018_2019.git
-
-
-2/  rendre le script executable
+2/ rendre le script executable
 
 	chmod +x ./historystats.sh
 
